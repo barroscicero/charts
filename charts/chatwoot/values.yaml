@@ -113,10 +113,10 @@ postgresql:
   nameOverride: chatwoot-postgresql
   auth:
     username: admin
-    postgresPassword: WFGJVBPLLXONRRBI
-    database: compose
-    postgresqlHost: portal-ssl1587-10.bmix-dal-yp-7d175c8f-40c2-49ed-a596-0b3cdc645d4f.1254543361.composedb.com
-    postgresqlPort: 49513
+    postgresPassword: d02d30bf5d185f79cc22e0c71a8d8ad759f4e77c774ef6582a3
+    database: chatwoot_production
+    postgresqlHost: c249dc9e-d28c-4021-93d9-4610a309cdee.c38qvnlz04atmdpus310.databases.appdomain.cloud
+    postgresqlPort: 32362
 
 redis:
   enabled: true
