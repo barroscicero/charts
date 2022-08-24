@@ -132,6 +132,10 @@ redis:
   # password: redis
   # port: 6379
   master:
+    securityContext:
+      fsGroup: 2000
+      runAsNonRoot: true
+      runAsUser: 1000
     persistence:
       enabled: true
       # If change pvc size redis.master.persistence.size: 20Gi
