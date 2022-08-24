@@ -121,6 +121,8 @@ postgresql:
 redis:
   enabled: true
   nameOverride: chatwoot-redis
+  volumePermissions:
+    enabled: true
   auth:
     password: redis
     # when defined the password field is ignored
@@ -132,6 +134,8 @@ redis:
   # password: redis
   # port: 6379
   master:
+    volumePermissions:
+      enabled: true
     securityContext:
       fsGroup: 2000
       runAsNonRoot: true
